@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/questionsFragment">
+
+    <fragment
+        android:id="@+id/questionsFragment"
+        android:name="com.example.udsp.Questions.QuestionsFragment"
+        android:label="Универсальная программа поддержки приняти решений"
+        tools:layout="@layout/fragment_questions">
+        <action
+            android:id="@+id/action_questionsFragment_to_recommendationsFragment"
+            app:destination="@id/recommendationsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/recommendationsFragment"
+        android:name="com.example.udsp.Recommendations.RecommendationsFragment"
+        android:label="Универсальная программа поддержки приняти решений"
+        tools:layout="@layout/fragment_recommendations">
+        <argument
+            android:name="answers"
+            app:argType="integer[]" />
+    </fragment>
+</navigation>
