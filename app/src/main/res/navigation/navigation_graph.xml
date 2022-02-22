@@ -3,25 +3,73 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_graph"
-    app:startDestination="@id/questionsFragment">
+    app:startDestination="@id/welcomeFragment">
 
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.udsp.WelcomeFragment"
+        android:label="Универсальная программа поддержки принятия решений"
+        tools:layout="@layout/fragment_welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_questionsFragment"
+            app:destination="@id/questionsFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"/>
+        <action
+            android:id="@+id/action_welcomeFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"/>
+        <action
+            android:id="@+id/action_welcomeFragment_to_instructionsFragment"
+            app:destination="@id/instructionsFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"/>
+    </fragment>
     <fragment
         android:id="@+id/questionsFragment"
         android:name="com.example.udsp.Questions.QuestionsFragment"
-        android:label="Универсальная программа поддержки приняти решений"
+        android:label="Вопросы"
         tools:layout="@layout/fragment_questions">
         <action
             android:id="@+id/action_questionsFragment_to_recommendationsFragment"
-            app:destination="@id/recommendationsFragment" />
+            app:destination="@id/recommendationsFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"/>
     </fragment>
 
     <fragment
         android:id="@+id/recommendationsFragment"
         android:name="com.example.udsp.Recommendations.RecommendationsFragment"
-        android:label="Универсальная программа поддержки приняти решений"
+        android:label="Рекомендации"
         tools:layout="@layout/fragment_recommendations">
+        <action
+            android:id="@+id/action_recommendationsFragment_to_welcomeFragment"
+            app:popUpTo="@id/questionsFragment"
+            app:enterAnim="@anim/slide_in"
+            app:exitAnim="@anim/slide_out"
+            app:popEnterAnim="@anim/slide_in"
+            app:popExitAnim="@anim/slide_out"/>
         <argument
             android:name="answers"
             app:argType="integer[]" />
     </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.udsp.AboutFragment"
+        android:label="О приложении"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/instructionsFragment"
+        android:name="com.example.udsp.InstructionsFragment"
+        android:label="Инструкция"
+        tools:layout="@layout/fragment_instructions" />
 </navigation>

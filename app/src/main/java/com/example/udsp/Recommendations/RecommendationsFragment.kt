@@ -40,32 +40,26 @@ class RecommendationsFragment : Fragment() {
 
         if (answers[0] == 1 && answers[2] == 0 && answers[3] == 0) finalRecommendations += allRecommendations[0]
 
+        if ((answers[1] == 1 || answers[4] == 1 || answers[5] == 1) && answers[0] == 0
+            && answers[2] == 0) finalRecommendations += allRecommendations[1]
+
         if (answers[1] == 1) finalRecommendations += allRecommendations[3]
 
         if (answers[2] == 1) finalRecommendations += allRecommendations[4]
 
         if (answers[3] == 1) finalRecommendations += allRecommendations[5]
 
-        if (answers[4] == 1 && answers[6] == 0) finalRecommendations += allRecommendations[6]
+        if (answers[4] == 1) finalRecommendations += allRecommendations[6]
 
         if (answers[5] == 1) finalRecommendations += allRecommendations[7]
 
-        if (answers[6] == 1 && answers[0] == 0) {
+        if (answers[6] == 1 && answers[0] == 0 && answers[1] == 0 && answers[2] == 0  &&
+            answers[3] == 0 && answers[4] == 0 && answers[5] == 0) {
             finalRecommendations += allRecommendations[1]
             finalRecommendations += allRecommendations[2]
         }
-        if (answers[6] == 1 && answers[4] == 0) {
+        else if (answers[6] == 1) {
             finalRecommendations += allRecommendations[2]
-        }
-
-        if (answers[6] == 1 && answers[4] == 1 && answers[0] == 0) {
-            finalRecommendations += allRecommendations[1]
-            finalRecommendations += allRecommendations[2]
-            finalRecommendations += allRecommendations[6]
-        }
-        if (answers[6] == 1 && answers[4] == 1) {
-            finalRecommendations += allRecommendations[2]
-            finalRecommendations += allRecommendations[6]
         }
 
         if (finalRecommendations.isEmpty()) finalRecommendations += allRecommendations[1]

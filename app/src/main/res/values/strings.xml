@@ -6,4 +6,18 @@
     <string name="no_button">Нет</string>
     <string name="result_button">Рекомендации</string>
     <string name="back_button">Назад</string>
+    <string name="app_name_title">Универсальная программа поддержки принятия решений</string>
+
+    <!--  About fragment  -->
+    <string name="about_title">О приложении</string>
+    <string name="about_name">Название: Универсальная программа поддержки принятия решений (УПППР)</string>
+    <string name="about_version">Версия: v1.1</string>
+
+    <!--  Instructions fragment  -->
+    <string name="instructions_title">Инструкция</string>
+    <string name="instructions_description">После нажатия кнопки "Начать", вам предлагается ответить на вопросы, после чего программа анализирует данные и, в соответствии с условиями алгоритма и анализом сочетания ответов ("и/или/нет"), выводит стандартизованные заключительные выводы (формулировки).</string>
+
+    <string name="about_button">О приложении</string>
+    <string name="instructions_button">Инструкция</string>
+    <string name="start_button">Начать</string>
 </resources>
