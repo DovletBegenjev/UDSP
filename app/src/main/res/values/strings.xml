@@ -1,16 +1,16 @@
 <resources>
-    <string name="app_name">УПППР</string>
+    <string name="app_name">Амбулаторная помощь при COVID19</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="yes_button">Да</string>
     <string name="no_button">Нет</string>
     <string name="result_button">Рекомендации</string>
     <string name="back_button">Назад</string>
-    <string name="app_name_title">Универсальная программа поддержки принятия решений</string>
+    <string name="app_name_title">Амбулаторная помощь при COVID19</string>
 
     <!--  About fragment  -->
     <string name="about_title">О приложении</string>
-    <string name="about_name">Название: Универсальная программа поддержки принятия решений (УПППР)</string>
+    <string name="about_name">Название: Амбулаторная помощь при COVID19</string>
     <string name="about_version">Версия: v1.1</string>
 
     <!--  Instructions fragment  -->

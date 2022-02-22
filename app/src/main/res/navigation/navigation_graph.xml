@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.example.udsp.WelcomeFragment"
-        android:label="Универсальная программа поддержки принятия решений"
+        android:label="Амбулаторная помощь при COVID19"
         tools:layout="@layout/fragment_welcome">
         <action
             android:id="@+id/action_welcomeFragment_to_questionsFragment"
