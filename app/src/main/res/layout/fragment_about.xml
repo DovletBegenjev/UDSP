@@ -19,7 +19,28 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/about_name"
+        android:text="@string/about_name1"
+        android:textColor="@color/black"
+        android:layout_marginTop="7dp"
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/about_name2"
+        android:textColor="@color/black"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/authors"
+        android:textColor="@color/black"
+        android:layout_margin="7dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/developers"
         android:textColor="@color/black"
         android:layout_margin="7dp"/>
 
